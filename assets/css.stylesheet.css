@@ -1,13 +1,25 @@
 body {
   background-color: #afa070;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:'San Francisco' Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 header {
   background-color: #89923b;
   padding: 10px;
+}
+
+.highlight {
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: grabbing;
+  background-color: #7532183b;
+  
 }
 
 nav ul {
