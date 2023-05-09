@@ -1,7 +1,7 @@
 body {
-  background-image: url(coding.jpg);
-  background-size: 150%;
-  background-repeat: repeat-y;
+  background-image: url(grey.jpg);
+  background-size: 385%;
+  background-repeat: no-repeat;
   font-family: 'San Francisco' Arial, Helvetica, sans-serif;
   text-decoration: solid;
   text-decoration-color: aliceblue;
@@ -11,7 +11,8 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-
+  flex-direction: row;
+  flex: auto;
 }
 
 
@@ -25,7 +26,6 @@ header {
   font-family: Arial, Helvetica, sans-serif;
   cursor: grabbing;
   background-color: rgba(240, 248, 255, 0.164);
-
 }
 
 nav ul {
@@ -57,6 +57,8 @@ main {
   color: aliceblue;
 }
 
+
+
 h1 {
   font-family: Arial, Helvetica, sans-serif;
   color: aliceblue;
@@ -70,6 +72,14 @@ h1 {
 }
 
 .image-container {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  position: relative; 
+  right: 50px;
+  margin-left: 90px;
   cursor: not-allowed;
   font-family: 'Times New Roman', Times, serif;
   color: rgb(243, 168, 71);
@@ -86,6 +96,12 @@ h1 {
   cursor: not-allowed;
   font-family: 'Times New Roman', Times, serif;
   color: rgb(243, 168, 71);
+  text-align: end;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  height: 200px;
+  border: 5px solid rgba(255, 255, 255, 0.562);
 }
 
 p,
@@ -97,7 +113,7 @@ div {
 }
 
 .about-me {
-  position: flex;
+  position: relative; flex-wrap: wrap;
   width: 200px;
   height: 200px;
   width: 200px;
@@ -114,6 +130,11 @@ div {
   text-shadow: #000000;
   text-rendering: optimizeLegibility;
   text-decoration: underline;
+  margin-left: 200px;
+  margin-top: 50px;
+  text-align: center;
+  
+  
 }
 
 .Github-Overview {
