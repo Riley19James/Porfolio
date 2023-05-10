@@ -6,45 +6,85 @@ body {
   text-decoration: solid;
   text-decoration-color: aliceblue;
   padding: 0;
-  display: flex;
-  flex-direction: row;
   justify-content: center;
-  align-items: center;
+  display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  flex: auto;
-}
+  flex: content;
+  text-rendering: optimizeLegibility;
 
+}
 
 header {
-  background-color: #191b1ba6;
-  padding: 10px;
-  text-transform: capitalize;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(142, 201, 253);
+  border: 1px #398b9677;
+  background-color: #398b9677;
+  border-radius: 7%;
+ 
 }
+
+.highlight:hover {
+  filter: opacity(50%);
+  cursor: pointer;
+}
+
 
 .highlight {
   font-family: Arial, Helvetica, sans-serif;
+  color: rgb(255, 255, 255);
   cursor: grabbing;
-  background-color: rgba(240, 248, 255, 0.164);
+  background-color: rgba(0, 0, 0, 0);
+  position: relative;
+  right: 630px;
+
 }
 
+
+
 nav ul {
-  list-style-type: none;
-  margin: 0;
+  position: relative;
+  bottom: 420px;
+  margin: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 30px;
+  margin-bottom: 18px;
   padding: 0;
+  left: 630px;
+  top: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: aliceblue;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  flex: content;
 }
 
 nav ul li {
   display: inline-block;
   margin-right: 10px;
   margin-right: 0;
-
+  position: relative;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  flex: content;
 }
 
 nav ul li a {
-  color: #423e26;
-  text-decoration-style: initial;
+  font-family: Arial, Helvetica, sans-serif;
   color: aliceblue;
+  text-decoration-style: solid;
+  color: rgb(0, 0, 0);
+  position: relative;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  flex: content;
 }
 
 main {
@@ -55,8 +95,10 @@ main {
   font-style: normal;
   font-family: Arial, Helvetica, sans-serif;
   color: aliceblue;
+  justify-content: center;
+ 
+  
 }
-
 
 
 h1 {
@@ -71,15 +113,19 @@ h1 {
   color: aliceblue;
 }
 
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: aliceblue;
+}
+
 .image-container {
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 200px;
-  position: relative; 
-  right: 50px;
-  margin-left: 90px;
+  position: relative;
+  right: 0px;
   cursor: not-allowed;
   font-family: 'Times New Roman', Times, serif;
   color: rgb(243, 168, 71);
@@ -113,14 +159,15 @@ div {
 }
 
 .about-me {
-  position: relative; flex-wrap: wrap;
+  position: relative;
+  flex-wrap: wrap;
   width: 200px;
   height: 200px;
   width: 200px;
   height: 200px;
   border-style: solid;
   border-radius: 10%;
-  border-color: #398b9671;
+  border-color: #00ffff9a;
   background-color: #191b1ba6;
   font-size: 16px;
   color: aliceblue;
@@ -131,36 +178,81 @@ div {
   text-rendering: optimizeLegibility;
   text-decoration: underline;
   margin-left: 200px;
-  margin-top: 50px;
-  text-align: center;
-  
-  
+  margin-top: 10px;
+  text-align: left;
+}
+
+.about-me:hover {
+  filter: saturate(1000%);
+  background-color: black;
+  transform: scale(1.1);
+  cursor: zoom-in;
+
+}
+
+.Github-Overview:hover {
+  background-image: url(github-homescreen.PNG);
+  filter: blur(3px);
+  position: -webkit-sticky;
+  transform: scale(1.1);
+  cursor: wait;
+
 }
 
 .Github-Overview {
   width: 600px;
   height: 150px;
   border-style: solid;
-  border-radius: 5%;
-  border-color: #191b1ba6;
+  border-radius: 10%;
+  border-color: #00ffff9a;
   background-color: #191b1ba6;
   margin: 0 auto;
+  margin-top: 10%;
   font-family: Arial, Helvetica, sans-serif;
   color: #000000;
   font-style: oblique;
   text-rendering: optimizeLegibility;
 }
 
+.Portfolio:hover {
+  background-image: url(githu\ backroundphotoV2.png);
+  filter: blur(3px);
+  transform: scale(1.1);
+
+}
+
+.Portfolio {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  backdrop-filter: blur(5px);
+  width: 600px;
+  height: 150px;
+  border-style: solid;
+  border-radius: 10%;
+  border-color: #00ffff9a;
+  background-color: #191b1ba6;
+  margin: 0 auto;
+  margin-top: 10%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000000;
+  font-style: oblique;
+  text-rendering: optimizeLegibility;
+
+}
 
 footer {
-  background-color: #191b1ba6;
-  text-align: center;
-  padding: 10px;
+  background-color: #191b1b27;
+  text-align: justify;
+  padding: 0px;
   font-family: Arial, Helvetica, sans-serif;
-  color: black;
-  margin-bottom: 0%;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
   text-decoration: underline;
   text-underline-offset: 4px;
+  flex-wrap: wrap;
 }
 
 .style-1 {
