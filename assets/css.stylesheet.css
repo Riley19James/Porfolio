@@ -12,7 +12,14 @@ body {
   flex-direction: row;
   flex: content;
   text-rendering: optimizeLegibility;
+  transition: backround-color 0.5s ease-in-out;
+  margin-left: 160px;
+}
 
+
+/* js to be added later */
+body.scrolled {
+  background-color: white;
 }
 
 header {
@@ -21,7 +28,13 @@ header {
   border: 1px #398b9677;
   background-color: #398b9677;
   border-radius: 7%;
- 
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  margin: 60px;
+  padding: 60px;
+  padding-top: 10px;
+  padding-bottom: 100px;
 }
 
 .highlight:hover {
@@ -33,36 +46,49 @@ header {
 .highlight {
   font-family: Arial, Helvetica, sans-serif;
   color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
   cursor: grabbing;
-  background-color: rgba(0, 0, 0, 0);
-  position: relative;
+  background-color: rgba(0, 0, 0, 0.219);
   right: 630px;
+  list-style-type: disc;
+}
 
+nav {
+  display: block;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-bottom: 80%;
+  padding-bottom: 120px;
 }
 
 
-
 nav ul {
+  
   position: relative;
   bottom: 420px;
   margin: 30px;
   margin-left: 10px;
   margin-right: 10px;
-  margin-top: 30px;
+  margin-top: 60px;
   margin-bottom: 18px;
   padding: 0;
   left: 630px;
   top: 100px;
   font-family: Arial, Helvetica, sans-serif;
   color: aliceblue;
-  justify-content: center;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column;
   flex: content;
+  
+  
 }
 
 nav ul li {
+  
   display: inline-block;
   margin-right: 10px;
   margin-right: 0;
@@ -72,9 +98,15 @@ nav ul li {
   flex-wrap: wrap;
   flex-direction: row;
   flex: content;
+  margin-bottom: 10px;
+  margin: 1px;
+  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 nav ul li a {
+  
   font-family: Arial, Helvetica, sans-serif;
   color: aliceblue;
   text-decoration-style: solid;
@@ -85,24 +117,29 @@ nav ul li a {
   flex-wrap: wrap;
   flex-direction: row;
   flex: content;
+  
 }
 
 main {
   background-color: #398b9677;
   border-radius: 5%;
   text-align: center;
-  padding: 20px;
+  margin-bottom: 10px;
+  margin: 60px;
+  padding: 60px;
+  padding-top: 50px;
+  padding-bottom: 20px;
   font-style: normal;
   font-family: Arial, Helvetica, sans-serif;
   color: aliceblue;
   justify-content: center;
- 
-  
+  text-rendering: optimizeLegibility;
 }
 
 
 h1 {
   font-family: Arial, Helvetica, sans-serif;
+
   color: aliceblue;
   font-style: normal;
   color: aliceblue;
@@ -192,6 +229,7 @@ div {
 
 .Github-Overview:hover {
   background-image: url(github-homescreen.PNG);
+  background-position: 70%;
   filter: blur(3px);
   position: -webkit-sticky;
   transform: scale(1.1);
@@ -215,7 +253,8 @@ div {
 }
 
 .Portfolio:hover {
-  background-image: url(githu\ backroundphotoV2.png);
+  background-image: url(horiseon-search-engine.png);
+  background-position: 0%;
   filter: blur(3px);
   transform: scale(1.1);
 
@@ -253,10 +292,37 @@ footer {
   text-decoration: underline;
   text-underline-offset: 4px;
   flex-wrap: wrap;
+  cursor: pointer;
 }
 
 .style-1 {
   text-align: left;
   font-family: Arial, Helvetica, sans-serif;
   font: bold;
+}
+
+/*Button to be made interactive with js */
+.send-button {
+  background-color: rgba(0, 0, 0, 0.329);
+  color: rgb(255, 255, 255);
+  padding: 5px 20px;
+  margin-top: 10px;
+}
+
+@media (max-width: 1230px) { 
+  header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100px;
+    width: 500px;
+
+  }
+
+  header nav {
+    display: flex;
+    flex-direction: row;
+    margin-top: -130px;
+  }
+
 }
