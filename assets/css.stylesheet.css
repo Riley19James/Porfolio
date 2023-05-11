@@ -199,9 +199,7 @@ div {
   position: relative;
   flex-wrap: wrap;
   width: 200px;
-  height: 200px;
-  width: 200px;
-  height: 200px;
+  height: 250px;
   border-style: solid;
   border-radius: 10%;
   border-color: #00ffff9a;
