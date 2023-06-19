@@ -50,7 +50,6 @@ header {
   display: flex;
   flex-direction: column;
   cursor: grabbing;
-  background-color: rgba(0, 0, 0, 0);
   right: 630px;
   list-style-type: disc;
 }
